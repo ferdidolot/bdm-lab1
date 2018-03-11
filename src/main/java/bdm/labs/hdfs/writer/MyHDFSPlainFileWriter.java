@@ -16,7 +16,6 @@ public class MyHDFSPlainFileWriter implements MyWriter {
 	private FSDataOutputStream output;
 	
 	private StringBuilder buffer;
-	private boolean first;
 	
 	public MyHDFSPlainFileWriter() {
 		this.reset();
@@ -42,7 +41,6 @@ public class MyHDFSPlainFileWriter implements MyWriter {
 	
 	public void reset() {
 		this.buffer = new StringBuilder();
-		this.first = true;
 	}
 	
 	public int flush() throws IOException {

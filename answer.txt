@@ -1,0 +1,42 @@
+bdm@ekans:~/Documents/bdm/lab1$ hdfs fsck /user/bdm/wines.10000000.txt -files -blocks -locations
+Connecting to namenode via http://localhost:50070/fsck?ugi=bdm&files=1&blocks=1&locations=1&path=%2Fuser%2Fbdm%2Fwines.10000000.txt
+FSCK started by bdm (auth:SIMPLE) from /127.0.0.1 for path /user/bdm/wines.10000000.txt at Sun Mar 11 11:15:10 CET 2018
+/user/bdm/wines.10000000.txt 1314946319 bytes, 10 block(s):  OK
+0. BP-2112053176-10.4.41.142-1516701164320:blk_1073741826_1002 len=134217728 Live_repl=1 [DatanodeInfoWithStorage[127.0.0.1:50010,DS-effd2722-0d72-43e0-9fda-885849ec0c06,DISK]]
+1. BP-2112053176-10.4.41.142-1516701164320:blk_1073741827_1003 len=134217728 Live_repl=1 [DatanodeInfoWithStorage[127.0.0.1:50010,DS-effd2722-0d72-43e0-9fda-885849ec0c06,DISK]]
+2. BP-2112053176-10.4.41.142-1516701164320:blk_1073741828_1004 len=134217728 Live_repl=1 [DatanodeInfoWithStorage[127.0.0.1:50010,DS-effd2722-0d72-43e0-9fda-885849ec0c06,DISK]]
+3. BP-2112053176-10.4.41.142-1516701164320:blk_1073741829_1005 len=134217728 Live_repl=1 [DatanodeInfoWithStorage[127.0.0.1:50010,DS-effd2722-0d72-43e0-9fda-885849ec0c06,DISK]]
+4. BP-2112053176-10.4.41.142-1516701164320:blk_1073741830_1006 len=134217728 Live_repl=1 [DatanodeInfoWithStorage[127.0.0.1:50010,DS-effd2722-0d72-43e0-9fda-885849ec0c06,DISK]]
+5. BP-2112053176-10.4.41.142-1516701164320:blk_1073741831_1007 len=134217728 Live_repl=1 [DatanodeInfoWithStorage[127.0.0.1:50010,DS-effd2722-0d72-43e0-9fda-885849ec0c06,DISK]]
+6. BP-2112053176-10.4.41.142-1516701164320:blk_1073741832_1008 len=134217728 Live_repl=1 [DatanodeInfoWithStorage[127.0.0.1:50010,DS-effd2722-0d72-43e0-9fda-885849ec0c06,DISK]]
+7. BP-2112053176-10.4.41.142-1516701164320:blk_1073741833_1009 len=134217728 Live_repl=1 [DatanodeInfoWithStorage[127.0.0.1:50010,DS-effd2722-0d72-43e0-9fda-885849ec0c06,DISK]]
+8. BP-2112053176-10.4.41.142-1516701164320:blk_1073741834_1010 len=134217728 Live_repl=1 [DatanodeInfoWithStorage[127.0.0.1:50010,DS-effd2722-0d72-43e0-9fda-885849ec0c06,DISK]]
+9. BP-2112053176-10.4.41.142-1516701164320:blk_1073741835_1011 len=106986767 Live_repl=1 [DatanodeInfoWithStorage[127.0.0.1:50010,DS-effd2722-0d72-43e0-9fda-885849ec0c06,DISK]]
+
+Status: HEALTHY
+ Total size:	1314946319 B
+ Total dirs:	0
+ Total files:	1
+ Total symlinks:		0
+ Total blocks (validated):	10 (avg. block size 131494631 B)
+ Minimally replicated blocks:	10 (100.0 %)
+ Over-replicated blocks:	0 (0.0 %)
+ Under-replicated blocks:	0 (0.0 %)
+ Mis-replicated blocks:		0 (0.0 %)
+ Default replication factor:	1
+ Average block replication:	1.0
+ Corrupt blocks:		0
+ Missing replicas:		0 (0.0 %)
+ Number of data-nodes:		1
+ Number of racks:		1
+FSCK ended at Sun Mar 11 11:15:10 CET 2018 in 0 milliseconds
+
+• What is the size of the file in HDFS?
+1314946319
+• How many blocks have been stored?
+10
+• What is the average block size? Discuss if such results make sense to you
+131494631
+yes, size of file in HDFS divided by number of blocks
+
+

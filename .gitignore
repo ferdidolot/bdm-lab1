@@ -1,0 +1,6 @@
+wines*.txt
+target/*
+.classpath
+.settings/
+.project
+.wines*

@@ -39,4 +39,15 @@ FSCK ended at Sun Mar 11 11:15:10 CET 2018 in 0 milliseconds
 131494631
 yes, size of file in HDFS divided by number of blocks
 
+• What do your files look like now? Are they readable?
+yes for txt, not for other type
+• What do you think is happening?
+other than plain text, they are in binary format
 
+Now, read the SequenceFile file again via the Java project:
+-read -sequenceFile hdfs://localhost:9000/user/bdm/wines.10000.seq
+
+• Is your file readable now?
+• What do you think the first column represents?
+• Is it something given automatically or do we need to specify it?
+• How is it built?

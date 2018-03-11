@@ -1,4 +1,7 @@
+wines*.prq
 wines*.txt
+wines*.avr
+wines*.seq
 target/*
 .classpath
 .settings/

@@ -29,6 +29,11 @@
             <version>1.8.2</version>
         </dependency>
         <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro-mapred</artifactId>
+            <version>1.8.2</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.parquet</groupId>
             <artifactId>parquet-avro</artifactId>
             <version>1.9.0</version>
@@ -36,4 +41,5 @@
     </dependencies>
 
 
+    <packaging>war</packaging>
 </project>

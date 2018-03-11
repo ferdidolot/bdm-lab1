@@ -2,6 +2,8 @@ package bdm.labs.hdfs;
 
 import java.io.IOException;
 
+import bdm.labs.hdfs.reader.MyHDFSAvroFileReader;
+import bdm.labs.hdfs.reader.MyHDFSParquetFileReader;
 import bdm.labs.hdfs.reader.MyHDFSPlainFileReader;
 import bdm.labs.hdfs.reader.MyHDFSSequenceFileReader;
 import bdm.labs.hdfs.reader.MyReader;
@@ -68,8 +70,14 @@ public class Main {
 			    if (args[1].equals("-plainText")) {
                     input = new MyHDFSPlainFileReader();
                 }
-				if (args[1].equals("-sequenceFile")) {
+			    else if (args[1].equals("-sequenceFile")) {
 					input = new MyHDFSSequenceFileReader();
+				}
+			    else if (args[1].equals("-avro")) {
+			    	input = new MyHDFSAvroFileReader();
+				}
+				else if (args[1].equals("-parquet")) {
+					input = new MyHDFSParquetFileReader();
 				}
 
 				file = args[2];
